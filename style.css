@@ -119,6 +119,15 @@ body {
   font-size: 2rem;
 }
 
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .hero_img_container {
   background: url(./image/phone-vote.png) var(--light-green);
   height: 100%;
@@ -126,6 +135,9 @@ body {
   background-size: contain;
   background-position: center;
   margin-right: 5rem;
+
+  animation: slide-in 1000ms;
+  animation-timing-function: ease-out;
 }
 
 .candidates {
@@ -343,65 +355,3 @@ body {
     align-content: space-between;
   }
 }
-
-/* 
-@media screen  (max-width: 826px) { 
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: inherit;
-    }
-    html{
-        font-size: 8px;
-        box-sizing: border-box;
-    }
-    .content{
-        /* width: 100%;
-        margin-top: 10vh;
-        height: 110vh;
-        padding-bottom: 20vh;
-        display:grid;
-        grid-template-rows: 1fr 1fr; */
-/* width: 100%; */
-
-/* }
-    .content_info{
-        width: 100%;
-        position: relative;
-        padding : 2rem;
-        background-color: green;
-    }
-    .content_info h1{
-        color: white;
-        font-size:12rem;
-        position: absolute;
-        top:18%;
-        left: 10%;
-        
-    }
-    .content_info p{
-        color: white;
-        font-size: 2rem;
-        position: absolute;
-        bottom:44%;
-        left: 14%;
-        
-    }
-    .content_info_2{
-        width: 100%;
-        position: relative;
-        padding : 2rem;
-        background-color: lightgreen;
-    }
-    .imginfo{
-        display:none;
-        width:50rem;
-        position: absolute;
-        top:15%;
-        right : 18%;
-    }
-} 
-
-@media only screen and (max-width: 480px) {
-   
-} */
