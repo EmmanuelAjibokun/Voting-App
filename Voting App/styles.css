@@ -6,4 +6,5 @@ body {
 
 .vote_container {
   display: flex;
+  padding: 52px;
 }
