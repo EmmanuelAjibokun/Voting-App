@@ -22,6 +22,32 @@ body {
   justify-content: center;
 }
 
-.vote_container p {
+.select_state {
   font-size: 2.4rem;
+}
+
+.state {
+  font-size: 2.4rem;
+  padding: .5rem 2rem;
+  margin-left: 2rem;
+  background: #c6e9d2;
+  border-radius: 19px;
+}
+
+.candidate_n_vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote_button {
+  color: white;
+  background: #08bf46;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  border-radius: 22px;
+  padding: .5rem 2rem;
+  margin: 1.5rem 0 .5rem;
 }
